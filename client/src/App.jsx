@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import "./App.css"
+import { Route, Routes } from "react-router";
+import SharedLayout from "./components/SharedLayout";
+import Home from "./components/Page/Home"
+
 
 function App() {
   return (
-    <div>App</div>
-  )
+    <>
+      <Routes>
+        <Route path="/" element={<SharedLayout/>}>
+        <Route index element={<Home />} />
+        </Route>
+      </Routes>
+    </>
+  );
 }
 
-export default App
+export default App;
