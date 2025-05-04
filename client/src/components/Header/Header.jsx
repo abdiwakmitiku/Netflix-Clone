@@ -7,6 +7,15 @@ import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 function Header() {
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('.header-outer-container');
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+  
   return (
     <>
       <div className="header-outer-container">

@@ -4,18 +4,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(20, 20, 20);
-  background-color: transparent;
+  background-color: rgba(20, 20, 20, 0.2);
   height: 10vh;
   color: white;
-  transition: all 0.5s;
-  transition-timing-function: ease-in;
+  transition: all 0.5s ease-in;
   z-index: 1;
 }
 
-/* .nav_black{
-  background-color: rgb(20, 20, 20);
-} */
+.header-outer-container.scrolled {
+  background-color: rgb(20, 20, 20); 
+}
+
 
 .header-container {
   width: 90%;
